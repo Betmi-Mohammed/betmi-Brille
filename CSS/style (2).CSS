@@ -229,7 +229,7 @@ padding-bottom: 0;
    margin-top: 30px;
   }
   #product-2 .pro:nth-child(2){
-    background: url(../img/shop/S4.jpg);
+    background: url(../img/shop/S4.jpg) center/COVER no-repeat;
   }
   
   #product-2 .pro button{
