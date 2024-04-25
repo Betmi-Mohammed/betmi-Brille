@@ -192,6 +192,7 @@ padding-bottom: 0;
 
 #product .pro:nth-child(3){
   background: url(../img/shop/S3.jpg)center/cover;
+  background-repeat: no-repeat;
 }
 
 #product .pro button{
