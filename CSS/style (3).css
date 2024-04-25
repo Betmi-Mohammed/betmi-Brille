@@ -1,0 +1,361 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #088178;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/********** Global Styles ************/
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 4rem;
+  color: #222;
+}
+
+h2 {
+  font-size: 2.875rem;
+  line-height: 3.375rem;
+  color: #222;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+/* header section */
+
+
+#Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #e3e6f3 ;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: sticky; /*-- position fixed--*/
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px ;
+    /*position: relative;*/ 
+}
+
+#navbar li a{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #121111e0;
+
+}
+#navbar li  :hover,
+#navbar li a.active{
+  color: var(--primary-color);
+}
+
+#Header img{
+  width: 120px;
+  height: 55px;
+}
+
+/* ---------la ligne--------- */
+#navbar li  :hover::after,
+#navbar li a.active::after{
+content: '';
+width: 30%;
+height: 2px;
+background-color: var(--primary-color);
+position: absolute;
+bottom: 4px;
+left: 20px;
+} 
+
+.head-cart{
+  font-size: 25px;
+}
+
+/*------MOBILE-----*/
+
+#mobile{
+  display: none;
+}
+#close{
+  display: none;
+}
+
+
+
+
+
+
+/*--------------Shop banner---------*/
+
+#banner #img-banner {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+ /*-------Products-------*/
+
+ #product1 {
+    text-align: center;
+   }
+  
+   #product1 .product-container{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: all 0.2s;
+   }
+  
+   #product1 .product-container .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 15px;
+    border: 2px solid #d8e4da;
+    border-radius: 25px;
+    box-shadow: 25px 25px 45px rgba(0,0, 0,0.05);
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 15px 10px;
+    transition: all 0.5s;
+    position: relative;
+   }
+  
+  
+   #product1 .product-container .pro:hover{
+    transform:scale(1.1);
+    box-shadow: 25px 25px 45px rgba(20,20, 20,0.5);
+   }
+  
+   #product1 .product-container .pro img{
+    width: 100%;
+    height: 60%;
+    border-radius: 25px;
+   }
+  
+   #product1 .product-container .pro .des{
+    text-align: start;
+    padding: 10px 0;
+   }
+  
+  #product1 .product-container .pro .des span{
+    color: #465b52;
+    font-size: 10px;
+   }
+  
+   #product1 .product-container .pro .des h5{
+    padding-top: 5px;
+    color: #000;
+    font-size: 15px;
+   }
+  
+   #product1 .product-container .pro .des i{
+    font-size: 13px;
+    color: goldenrod;
+   }
+  
+   #product1 .product-container .pro .des h4{
+    padding-top: 5px;
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 15px;
+   }
+  
+   #product1 .product-container .pro a i  {
+    height: 40px;
+    width: 40px;
+    background-color: #e8f6ee;
+    border-radius: 50PX;
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+   }
+
+   /*-----NewsLetter------*/
+#newsletter{
+    background: url(../img/banner/b1.jpg) center/cover no-repeat;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #newsletter .info3 h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #newsletter .info3 p{
+    color: #818ea0;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  #newsletter .info3 p span{
+    color: yellow;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  #newsletter .email{
+    display: flex;
+    align-items: center;
+  }
+  #newsletter .email form{
+    padding: 10px ;
+  }
+  
+  #newsletter input{
+    height: 20px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: start;
+    outline: none;
+    background-color: transparent;
+    color: white;
+  }
+  #newsletter button{
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #newsletter button:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+  }
+  
+  /*------Footer------*/
+  footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+  }
+  
+  footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  footer .logo{
+    margin-bottom: 40px;
+  }
+  
+  footer h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  footer a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #818ea0;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  footer .icon i{
+    color: #465b52;
+    font-size: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all 0.6s;
+  }
+  
+  footer .icon i:hover{
+    color: var(--primary-color);
+    transform: scale(1.2);
+  }
+  
+  footer .install .row img {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer .install img {
+   margin: 15px 0;
+  }
+  .copyright{
+    text-align: center;
+  }
+  
