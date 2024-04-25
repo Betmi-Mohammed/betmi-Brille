@@ -192,7 +192,6 @@ padding-bottom: 0;
 
 #product .pro:nth-child(3){
   background: url(../img/shop/S3.jpg)center/cover;
-  background-repeat: no-repeat;
 }
 
 #product .pro button{
@@ -229,7 +228,7 @@ padding-bottom: 0;
    margin-top: 30px;
   }
   #product-2 .pro:nth-child(2){
-    background: url(../img/shop/S4.jpg) center/COVER no-repeat;
+    background: url(../img/shop/S4.jpg) center/cover no-repeat;
   }
   
   #product-2 .pro button{
